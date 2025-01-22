@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Invoice Form</h1>
+    <form id="invoiceForm">
+      <label for="companyName">Company Name:</label>
+      <input type="text" id="companyName" required>
+
+      <label for="invoiceNumber">Invoice Number:</label>
+      <input type="text" id="invoiceNumber" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <div id="itemsContainer">
+        <h3>Items</h3>
+        <div class="item">
+          <input type="text" placeholder="Item Name" class="itemName" >
+          <input type="number" placeholder="Quantity" class="quantity" >
+          <input type="number" placeholder="Rate" class="rate" >
+          <span class="total">0</span>
+          <button type="button" class="removeItem">Remove</button>
+        </div>
+      </div>
+      <button type="button" id="addItem">Add Item</button>
+
+      <h3>Grand Total: <span id="grandTotal">0</span></h3>
+      <button type="submit">Save Invoice</button>
+    </form>
+    <a href="table.html">View Saved Invoices</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
