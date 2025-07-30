@@ -122,7 +122,7 @@ if (document.getElementById("invoiceTableBody")) {
   
     // Function to print the invoice (unchanged)
     const printInvoice = (invoice) => {
-      const totalRows = 12; // Total rows for items in the table
+      const totalRows = 30; // Total rows for items in the table
       const rowsNeeded = totalRows - invoice.items.length - 2; // Subtract 2 for the taxable value and bank details rows
       const emptyRows = Array(rowsNeeded)
         .fill()
